@@ -1,6 +1,7 @@
 <?php
 
 require_once 'settings.php';
+require_once 'functions.php';
 
 
 connectDb();
@@ -21,6 +22,6 @@ if(isset($_SESSION['status'])) {
 		$session=2;
 	}
 */
-}
+?>
 
 
