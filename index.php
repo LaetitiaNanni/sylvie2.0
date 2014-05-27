@@ -23,7 +23,21 @@
     <![endif]-->
   </head>
   <body>
-	<div class="col-xs-2 men-left"></div>
-	<div class="col-xs-7 content-middle"></div>
-	<div class="col-xs-3 menu-right"></div>
+
+    <!--MAIN MENU-->
+  	<div class="col-xs-2 column" id="main-menu">
+      <?php include 'mainMenu.php'; ?>
+    </div>
+
+    <!--Contenu principal de la page-->
+  	<div class="col-xs-7 column" id="main-content">
+        <!-- mettre des conditions pour gérer les pages -->
+        <?php include 'listing.php'; ?>
+    </div>
+
+    <!--liste du materiel à louer-->
+  	<div class="col-xs-3 column" id="rent-status">
+      <?php include 'rentCart.php'; ?>
+    </div>
+
   </body>

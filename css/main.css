@@ -1,16 +1,10 @@
-.menu-left{
-	padding:0;
-	background:#F4F4F4;
-	height:100%;
-}
-
-.Content-middle{
+.column {
 	padding:0;
 	height:100%;
 }
-
-.menu-right{
-	padding:0;
+#main-menu{
 	background:#F4F4F4;
-	height:100%;
+}
+#rent-status{
+	background:#F4F4F4;
 }
