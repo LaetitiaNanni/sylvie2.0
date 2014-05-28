@@ -1,10 +1,32 @@
+/* common elements */
 .column {
-	padding:0;
 	height:100%;
 }
+
+
 #main-menu{
+	padding:0;
 	background:#F4F4F4;
 }
+
+
+/* ZONE rent cart */
 #rent-status{
 	background:#F4F4F4;
+}
+#rent-status ul{
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+
+}
+#rent-status ul li{
+	display: block;
+	border-bottom: 1px solid #CCC;
+}
+#rent-status ul li p{
+	margin: 0;
+}
+#rent-status .cart_actions {
+	float: right;
 }
