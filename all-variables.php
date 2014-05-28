@@ -20,6 +20,13 @@
 		return $results;*/
 	}
 
+	function getAllKits() {
+		$sql = 'SELECT * FROM kit';
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+	}
+
 	//Récupérer l'administrateur avec l'id
 	function getAllRentNow() {
 		$sql = 'SELECT * FROM loan
@@ -54,6 +61,14 @@
 		$sql = 'SELECT * FROM lending
 				LEFT JOIN kit ON kit.ID_Kit = lending.ID_Kit
 				WHERE lending.ID_Loan = '.$id_loan;
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+	}
+
+	function getAllKitsByKeyword($keyword) {
+		$sql = 'SELECT * FROM kit
+		WHERE kit.label LIKE \'%'.mysql_real_escape_string($keyword).'%\'';
 		// on envoie la requête à la base de données 
     	$result = mysql_query($sql);
     	return $result;

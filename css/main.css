@@ -102,6 +102,9 @@ footer {
 	padding-left : 20px;
 	font-size: 12px;
 }
+#main-menu .menu-sub a:first-child {
+	display: none;
+}
 
 
 
