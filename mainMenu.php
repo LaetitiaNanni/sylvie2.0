@@ -1,5 +1,5 @@
 <div id="logo_qr">
-	<img class="img-rounded img-responsive" alt="logo QR" src="images/logo_qr.jpg"></img>
+	<img class="img-responsive" alt="logo QR" src="images/logo_qr.png"></img>
 	
 </div>
 

@@ -51,10 +51,6 @@ footer {
 }
 
 
-
-
-
-
 .column {
 	min-height:100%;
 	display: table-row;
@@ -70,10 +66,11 @@ footer {
 }
 */
 #main-menu {
-  background:#F4F4F4;
+  background:#34495E;
   padding:10px 0px;
   text-align: center;
   border-right:1px solid #eee;
+  color: white;
 }
 
 #main-menu h4 {
@@ -84,6 +81,7 @@ footer {
 }
 
 #main-menu nav {
+	border-top:1px solid #2c3e50;
   margin:20px 0px;
 }
 
@@ -92,10 +90,8 @@ footer {
   float:left;
   width:100%;
   padding:7px 0px 7px 15px;
-  color:#565656;
   text-align: left;
-  border-top:1px solid #eee;
-  border-bottom:1px solid #eee;
+  border-bottom:1px solid #2c3e50;
 }
 
 
