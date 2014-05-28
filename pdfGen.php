@@ -219,7 +219,7 @@ $collaborators=utf8_decode($collaborators);
 $pdf->MultiCell(95,7,'dfsgsfdg gdsdsgdsg dgdgsdgf dsgfdg ijgoidjsgoi dgjoijodfsgj godj oigjoifdjgoidsfjg ',0);// matos emprunté
 $pdf->Cell(95,12,'',0);
 
-ob_clean();
+//ob_clean();
 //$buffer = ob_get_clean();
 
 $pdf->Output();
