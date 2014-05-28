@@ -85,8 +85,17 @@
 		}
 		return $results;*/
 	}
-	function getAllSubCategories(§id_category) {
-		$sql = 'SELECT * FROM type WHERE ID_Category='.§id_category;
+
+	function getAllSubCategoriesByKeyword($keyword) {
+		$sql = 'SELECT * FROM type
+		WHERE type.label LIKE \'%'.mysql_real_escape_string($keyword).'%\'';
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+	}
+
+	function getAllSubCategoriesById($id_category) {
+		$sql = 'SELECT * FROM type WHERE ID_Category='.$id_category;
 		// on envoie la requête à la base de données 
     	$result = mysql_query($sql);
     	return $result;
