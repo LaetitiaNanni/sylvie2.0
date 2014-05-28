@@ -32,7 +32,7 @@
       <!--Contenu principal de la page-->
       <div class="col-xs-7 column" id="main-content">
         <!-- mettre des conditions pour gérer les pages -->
-        <?php include 'listing.php'; ?>
+        <?php include 'listing_ficheProduit.php'; ?>
       </div>
 
       <!--liste du materiel à louer-->
