@@ -15,7 +15,7 @@
  ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <title>Flat UI - Free Bootstrap Framework and Themes</title>
@@ -28,6 +28,7 @@
 
     <!-- Loading Flat UI -->
     <link href="../css/flat-ui.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
     <link href="../css/admin.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -40,7 +41,7 @@
 
   </head>
   <body>
-    <div class="col-xs-2 column" id="menu">
+    <div class="col-xs-2 column" id="main-menu">
       <img src="../images/icons/svg/clipboard.svg" alt="Clipboard">
       <h4>Navigation</h4>
       <nav>
