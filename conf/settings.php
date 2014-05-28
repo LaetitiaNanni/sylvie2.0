@@ -1,9 +1,9 @@
 <?php
 
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', '88.164.174.21');
 define('DB_USER', 'root');
-define('DB_PASS', 'root');
-define('DB_BASE', 'materimacBDD');
+define('DB_PASS', '');
+define('DB_BASE', 'materimac_bdd_tempo');
 define('DB_PORT', '');
 
 //define('LIB_PATH', 'lib/');
