@@ -27,6 +27,14 @@
     	return $result;
 	}
 
+	function getKitById($id_kit) {
+		$sql = 'SELECT * FROM kit
+		WHERE kit.ID_Kit = '.$id_kit;
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+	}
+	
 	//Récupérer l'administrateur avec l'id
 	function getAllRentNow() {
 		$sql = 'SELECT * FROM loan
@@ -155,4 +163,8 @@
 			return 1;
 	}
 
+	function updateArray($id,$label,$array){
+		array_push($array, $label, $array);
+		return $array;
+	}
 ?>
