@@ -73,8 +73,30 @@
     	$result = mysql_query($sql);
     	return $result;
 	}
-
-
+	function getAllGategories() {
+		$sql = 'SELECT * FROM category';
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+		//$results = NULL ;
+		// on utilise mysql_fetch_array pour ranger les résultats de la requête dans un tableau associatif
+		/*while ($ligne = mysql_fetch_object($result)) {
+			$results = $ligne;
+		}
+		return $results;*/
+	}
+	function getAllSubCategories(§id_category) {
+		$sql = 'SELECT * FROM type WHERE ID_Category='.§id_category;
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+		//$results = NULL ;
+		// on utilise mysql_fetch_array pour ranger les résultats de la requête dans un tableau associatif
+		/*while ($ligne = mysql_fetch_object($result)) {
+			$results = $ligne;
+		}
+		return $results;*/
+	}
 	/*************************************************************************
 	************  Récupérer tous les matos en fonction du kit  ***************
 	**************************************************************************/
