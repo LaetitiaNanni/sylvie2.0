@@ -19,7 +19,3 @@
 		mysql_free_result($result) ;
 		return $results ;
 	}
-
-?>
-
-		

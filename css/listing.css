@@ -1,5 +1,5 @@
 		#centre{
-			border : 2px #34495E solid;
+			border : 2px #16a085 solid;
 			border-radius: 10px;
 			margin-top: 15%;
 			width: 100%;
@@ -18,7 +18,7 @@
 		#description{ 
 			display: inline-block;
 			vertical-align: top;
-			border : 2px #34495E solid;
+			border : 2px #16a085 solid;
 			border-radius: 10px;
 			margin-left: 5%;
 			margin-top: 30px;
@@ -33,7 +33,7 @@
 			width: 80%;
 			padding-left: 15%;
 			padding-bottom: 2%;
-			border : 2px #34495E solid;
+			border : 2px #16a085 solid;
 			border-radius: 10px;
 		
 		}

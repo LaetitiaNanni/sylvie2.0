@@ -81,11 +81,52 @@
     	$result = mysql_query($sql);
     	return $result;
 	}
+	function getAllCategories() {
+		$sql = 'SELECT * FROM category';
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+		//$results = NULL ;
+		// on utilise mysql_fetch_array pour ranger les résultats de la requête dans un tableau associatif
+		/*while ($ligne = mysql_fetch_object($result)) {
+			$results = $ligne;
+		}
+		return $results;*/
+	}
 
+	function getAllSubCategoriesByKeyword($keyword) {
+		$sql = 'SELECT * FROM type
+		WHERE type.label LIKE \'%'.mysql_real_escape_string($keyword).'%\'';
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+	}
 
+	function getAllSubCategoriesById($id_category) {
+		$sql = 'SELECT * FROM type WHERE ID_Category='.$id_category;
+		// on envoie la requête à la base de données 
+    	$result = mysql_query($sql);
+    	return $result;
+		//$results = NULL ;
+		// on utilise mysql_fetch_array pour ranger les résultats de la requête dans un tableau associatif
+		/*while ($ligne = mysql_fetch_object($result)) {
+			$results = $ligne;
+		}
+		return $results;*/
+	}
 	/*************************************************************************
 	************  Récupérer tous les matos en fonction du kit  ***************
 	**************************************************************************/
+
+  function getColorFromProductId($id_product) {
+    $sql = "SELECT Color FROM category " .
+      " INNER JOIN type ON type.ID_Category = category.ID_Category " .
+      " INNER JOIN item ON item.ID_Type = type.ID_Type " .
+      " WHERE item.ID_Item = $id_product";
+
+    $result = mysql_query($sql);
+    return $result;
+  }
 
 	//Récupérer l'administrateur avec l'id
 	function getItemFromKit($id_kit) {
@@ -162,9 +203,3 @@
 			}
 			return 1;
 	}
-
-	function updateArray($id,$label,$array){
-		array_push($array, $label, $array);
-		return $array;
-	}
-?>

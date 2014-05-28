@@ -32,6 +32,7 @@ html, body {
 }
 footer {
     position: relative;
+    text-align: center;
     height: 50px;
     margin-top: -50px; /*relatif au height total du footer*/
     clear: both;
@@ -40,9 +41,15 @@ footer {
   	border-bottom :5px solid #e27206;
 }
 
-
-
-
+#footer_student {
+    position: relative;
+    height: 50px;
+    margin-top: -50px; /*relatif au height total du footer*/
+    clear: both;
+    color:#34495e;
+  	background-color:#B6F9EC;
+  	border-bottom :5px solid #1abc9c;
+}
 
 
 .column {
@@ -59,11 +66,23 @@ footer {
   clear: both;
 }
 */
+
+
+.calendarSearch {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.calendarSearch label {
+  margin: 0;
+}
+
 #main-menu {
-  background:#F4F4F4;
+  background:#34495E;
   padding:10px 0px;
   text-align: center;
   border-right:1px solid #eee;
+  color: white;
 }
 
 #main-menu h4 {
@@ -73,7 +92,7 @@ footer {
   font-weight:normal;
 }
 
-#main-menu nav {
+#main-menu nav{
   margin:20px 0px;
 }
 
@@ -82,18 +101,19 @@ footer {
   float:left;
   width:100%;
   padding:7px 0px 7px 15px;
-  color:#565656;
   text-align: left;
-  border-top:1px solid #eee;
-  border-bottom:1px solid #eee;
+  border-bottom:1px solid #2c3e50;
 }
 
-#main-menu nav a:hover,
+
 #main-menu nav a.actif {
-  background-color:#3498DB;
+  background-color:#1abc9c;
   color:#fff;
 }
-
+#main-menu nav a:hover{
+	background-color:#48C9B0;
+	color:#fff;
+}
 #main-menu nav a+a {
   border-top:0px;
 }
@@ -106,6 +126,26 @@ footer {
 	display: none;
 }
 
+.btn {
+	background-color: #1abc9c;
+	border-color: #1abc9c;
+}
+
+.btn-primary{
+	background-color: #1abc9c;
+	border-color: #1abc9c;
+}
+
+#logo_qr{
+	width: 70%;
+	margin-left: 15%;
+
+}
+
+
+#main-content {
+	padding-top: 40px;
+}
 
 
 
@@ -129,3 +169,5 @@ footer {
 #rent-status .cart_actions {
 	float: right;
 }
+
+

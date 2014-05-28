@@ -30,8 +30,8 @@
 					aaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaa aaaaaaaaa aaaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaa
 				</p>
 				<div id="description_disponibilite"> Disponibilité : <span class="fui-check"></span> <span class="fui-cross"></span> </div>
-				<div class="col-xs-10">
-				  <a href="#fakelink" class="btn btn-block btn-lg btn-primary">Ajouter au panier</a>
+				<div class="col-xs-10 ">
+				  <a href="#fakelink" class="btn btn-block btn-lg btn-primary" >Ajouter au panier</a>
 				</div>
 				
 			</div>
@@ -51,7 +51,7 @@
 						</figure>
 					</div>
 					<div class="col-xs-3">
-						<figure class="vignette">
+						<figure class="vignette ">
 							<img src="images/exaple-image.jpg" alt="exaple-image" class="img-rounded img-responsive">
 							<figcaption> titre. </figcaption>
 						</figure>	
