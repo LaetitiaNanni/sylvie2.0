@@ -1,10 +1,3 @@
-<?php
-	session_start();
-	require 'conf/top.php';
-	connectDb();
-
-?>
-
 
 <div id="centre">
 			<div id="video">
