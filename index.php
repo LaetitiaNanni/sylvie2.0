@@ -13,6 +13,7 @@
     <link href="css/flat-ui.css" rel="stylesheet">
     <link href="css/demo.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -28,6 +29,10 @@
         <div class="site-main">
           <!--MAIN MENU-->
             <div class="col-xs-2 column" id="main-menu">
+              <div id="calendarStart" class="calendarSearch">
+                <label>Date de début :</label>
+                <input id="dateDebut" name="dateDebut" type="text" />
+              </div>
               <?php include 'mainMenu.php'; ?>
             </div>
 
@@ -50,7 +55,8 @@
   </div>
       <!-- Load JS here for greater good =============================-->
       <script src="js/jquery-1.8.3.min.js"></script>
-      <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+      <!--<script src="js/jquery-ui-1.10.3.custom.min.js"></script>-->
+      <script src="js/jquery-ui-1.10.4.min.js"></script>
       <script src="js/jquery.ui.touch-punch.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/bootstrap-select.js"></script>
@@ -61,4 +67,18 @@
       <script src="js/jquery.placeholder.js"></script>
       <script src="js/application.js"></script>
       <script src="js/main.js"></script>
+
+      <script>
+        $(document).ready(function() {
+            $(function(){
+            $.datepicker.setDefaults(
+                $.extend($.datepicker.regional['Fr'])
+            );
+              $('#dateDebut').datepicker({  
+                    showOtherMonths: true,  
+                    dayNamesMin: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],  
+                });  
+          });
+        });
+      </script>
     </body>

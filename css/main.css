@@ -59,7 +59,17 @@ footer {
   clear: both;
 }
 */
-#main-menu {
+
+.calendarSearch {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.calendarSearch label {
+  margin: 0;
+}
+
+#main-menu{
   background:#F4F4F4;
   padding:10px 0px;
   text-align: center;
@@ -73,7 +83,7 @@ footer {
   font-weight:normal;
 }
 
-#main-menu nav {
+#main-menu nav{
   margin:20px 0px;
 }
 
