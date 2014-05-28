@@ -1,0 +1,50 @@
+		#centre{
+			border : 2px #34495E solid;
+			border-radius: 10px;
+			margin-top: 15%;
+			width: 100%;
+			height: 600px;
+			
+		}
+		#video{
+			display: inline-block;
+			padding: 0px;
+			margin: 0px;
+			margin-left: 3%;
+			padding-top: 95px;
+	
+
+		}
+		#description{ 
+			display: inline-block;
+			vertical-align: top;
+			border : 2px #34495E solid;
+			border-radius: 10px;
+			margin-left: 10%;
+			margin-top: 30px;
+			width : 40%;
+			
+			
+		}
+		#autre_sets{
+			margin-top: 5%;
+			margin-left: 20%;
+		
+		}
+		
+		#description-contenu{
+			width: 100%;
+			
+		}
+		#description_image{
+			float: top; 
+			width: 80px;
+			height: 80px;
+			
+		}
+
+
+		.vignette{
+			border : 2px black solid;
+			border-radius: 10px;
+		}
