@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <title>Materimac !</title>
@@ -22,23 +23,31 @@
       <![endif]-->
   </head>
   <body>
-
+<div id="page">
+  <div id="sticky-footer-wrap">
+    <div class="site-main">
       <!--MAIN MENU-->
-      <div class="col-xs-2 column" id="main-menu">
-        <?php include 'mainMenu.php'; ?>
-      </div>
+        <div class="col-xs-2 column" id="main-menu">
+          <?php include 'mainMenu.php'; ?>
+        </div>
 
-      <!--Contenu principal de la page-->
-      <div class="col-xs-7 column" id="main-content">
-        <!-- mettre des conditions pour gérer les pages -->
-        <?php include 'listing.php'; ?>
-      </div>
+        <!--Contenu principal de la page-->
+        <div class="col-xs-7 column" id="main-content">
+          <!-- mettre des conditions pour gérer les pages -->
+          <?php include 'listing.php'; ?>
+        </div>
 
-      <!--liste du materiel à louer-->
-      <div class="col-xs-3 column" id="rent-status">
-        <?php include 'rentCart.php'; ?>
-      </div>
-
+        <!--liste du materiel à louer-->
+        <div class="col-xs-3 column" id="rent-status">
+          <?php include 'rentCart.php'; ?>
+        </div>
+        </div>
+  </div>
+</div>
+    <footer>
+      <p>@ 2014 Ingénieur IMAC - Site réalisé par des élèves</p>
+    </footer>
+  </div>
       <!-- Load JS here for greater good =============================-->
       <script src="js/jquery-1.8.3.min.js"></script>
       <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
