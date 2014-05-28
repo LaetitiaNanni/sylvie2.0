@@ -39,6 +39,10 @@
       <div class="col-xs-3 column" id="rent-status">
         <?php include 'rentCart.php'; ?>
       </div>
+	  
+	<footer id="footer_student">
+      <p>@ 2014 Ingénieur IMAC - Site réalisé par des élèves</p>
+    </footer>
 
       <!-- Load JS here for greater good =============================-->
       <script src="js/jquery-1.8.3.min.js"></script>
