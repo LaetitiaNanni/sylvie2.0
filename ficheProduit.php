@@ -9,9 +9,10 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
+	<link href="css/main.css" rel="stylesheet">
     <link href="css/flat-ui.css" rel="stylesheet">
     <link href="css/demo.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    
 	<link href="css/listing.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/favicon.ico">
