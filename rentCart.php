@@ -1,3 +1,4 @@
+
 <h4>Mes commandes</h4>
 <ul>
 	<li class="item">
@@ -35,6 +36,8 @@
 		</div>
 	</li>
 </ul>
+<a href="pdfGen.php">
 <button class="btn btn-embossed btn-primary center-block">
   Louer ce materiel
 </button>	
+</a>

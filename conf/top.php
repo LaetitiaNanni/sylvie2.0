@@ -22,6 +22,3 @@ if(isset($_SESSION['status'])) {
 		$session=2;
 	}
 */
-?>
-
-
