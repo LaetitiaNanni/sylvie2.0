@@ -73,7 +73,7 @@
     	$result = mysql_query($sql);
     	return $result;
 	}
-	function getAllGategories() {
+	function getAllCategories() {
 		$sql = 'SELECT * FROM category';
 		// on envoie la requête à la base de données 
     	$result = mysql_query($sql);
