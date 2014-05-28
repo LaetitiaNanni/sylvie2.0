@@ -1,0 +1,132 @@
+ body {
+  font-family: Dosis;
+}
+
+.clear { clear:both;}
+
+.button {
+  padding:7px 10px;
+  color:#fff;
+  background-color:#e27206;
+  border-radius:6px;
+}
+
+.button:hover {
+  color:#fff;
+  background-color:#f38b12;
+}
+
+#menu {
+  padding:10px 0px;
+  text-align: center;
+  border-right:1px solid #eee;
+}
+
+#menu h4 {
+  color:#e27206;
+  font-size:1.5em;
+  text-transform: uppercase;
+  font-weight:normal;
+}
+
+#menu nav {
+  margin:20px 0px;
+}
+
+#menu nav a {
+  display:inline-block;
+  float:left;
+  width:100%;
+  padding:7px 0px 7px 15px;
+  color:#565656;
+  text-align: left;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+
+#menu nav a:hover,
+#menu nav a.actif {
+  background-color:#e27206;
+  color:#fff;
+}
+
+#menu nav a+a {
+  border-top:0px;
+}
+
+
+#content {
+  padding:10px 20px;
+}
+
+#content h3 {
+  margin-bottom:20px;
+  padding-bottom:10px;
+  text-transform: uppercase;
+  font-weight:normal;
+  border-bottom:1px solid #f6973b;
+}
+
+#content table {
+  width:100%;
+  margin-bottom:40px;
+}
+
+#content table tr th {
+  background-color:#e27206;
+  color:#fff;
+}
+
+#content table tr:nth-child(odd) {
+  background-color:#f9e3cc;
+}
+
+#content table tr th,
+#content table tr td {
+  text-align:center;
+  border:1px solid #eee;
+}
+
+#content table tr td span {
+  display:block;
+}
+
+#content table tr td span.fui-cross {
+  color:#b92c22;
+}
+
+#content table tr td span.fui-new {
+  color:#565656;
+}
+
+#content a.button {
+  float:right;
+  margin-bottom:20px;
+}
+
+
+#content .line-form  {
+  margin-bottom:20px;
+  clear:both;
+  overflow:hidden;
+}
+
+#content .line-form label {
+  display:inline-block;
+  float:left;
+  width:20%;
+}
+
+#content .line-form input {
+  display:inline-block;
+  float:left;
+  width:30%;
+}
+
+footer {
+  padding:10px 0px 5px 0px;
+  text-align:center;
+  color:#e27206;
+  background-color:#f9e3cc;
+  border-bottom :5px solid #e27206;
+}
