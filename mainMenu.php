@@ -2,8 +2,14 @@
 	<img class="img-responsive" alt="logo QR" src="images/logo_qr.png"></img>
 	
 </div>
-
-
+<div id="calendarStart" class="calendarSearch">
+    <label>Date de début :</label>
+    <input id="dateDebut" name="dateDebut" type="text" />
+</div>
+<div id="calendarStop" class="calendarSearch">
+    <label>Date de fin :</label>
+    <input id="dateFin" name="dateFin" type="text" />
+</div>
 <nav>
 <?php
     require_once('conf/top.php');

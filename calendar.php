@@ -1,32 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Materimac</title>
+    <meta name="description" content="IMAC location de materiel"/>
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
-<head>
-	<title> Calendrier - Test </title>
-	<link href="css/calendar.css" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-</head>
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
-<body>
-	<label>Date :</label><br />
-	<input id="datedebut" name="dateFiltre" type="text" />
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
 
-<script>
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-	$(document).ready(function() {
-	    $(function(){
-		 	$.datepicker.setDefaults(
-		    	$.extend($.datepicker.regional['Fr'])
-		 	);
-		    $('#datedebut').datepicker({  
-	            showOtherMonths: true,  
-	            dayNamesMin: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],  
-	        });  
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body>
+    <div id="page">
+      <div id="sticky-footer-wrap">
+        <div class="site-main">
+          <!--MAIN MENU-->
+            <div class="col-xs-2 column" id="main-menu">
+              <?php include 'mainMenu.php'; ?>
+              <a href="calendar.php">Calendrier</a>
+            </div>
 
-		});
-	});
-</script>
+            <!--Contenu principal de la page-->
+            <div class="col-xs-10 column" id="main-content">
+              <!-- mettre des conditions pour gérer les pages -->
+<iframe src="https://www.google.com/calendar/embed?src=imackathon%40gmail.com&ctz=Europe/Paris" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>            </div>
 
-</body>
 
-</html>
+            </div>
+      </div>
+    </div>
+    <footer id="footer_student">
+      <p>@ 2014 Ingénieur IMAC - Site réalisé par des élèves</p>
+    </footer>
+  </div>
+      <!-- Load JS here for greater good =============================-->
+      <script src="js/jquery-1.8.3.min.js"></script>
+      <!--<script src="js/jquery-ui-1.10.3.custom.min.js"></script>-->
+      <script src="js/jquery-ui-1.10.4.min.js"></script>
+      <script src="js/jquery.ui.touch-punch.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap-select.js"></script>
+      <script src="js/bootstrap-switch.js"></script>
+      <script src="js/flatui-checkbox.js"></script>
+      <script src="js/flatui-radio.js"></script>
+      <script src="js/jquery.tagsinput.js"></script>
+      <script src="js/jquery.placeholder.js"></script>
+      <script src="js/application.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/dispo.js"></script>
+
+      <script>
+        $(document).ready(function() {
+            $.datepicker.setDefaults(
+                $.extend($.datepicker.regional['Fr'])
+            );
+              $('#dateDebut').datepicker({  
+                    showOtherMonths: true,  
+                    dayNamesMin: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],  
+                });  
+
+         
+              $('#dateFin').datepicker({  
+                    showOtherMonths: true,  
+                    dayNamesMin: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],  
+                });  
+        });
+      </script>
+    </body>

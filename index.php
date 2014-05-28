@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Materimac !</title>
+    <title>Materimac</title>
     <meta name="description" content="IMAC location de materiel"/>
     <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
@@ -29,11 +29,8 @@
         <div class="site-main">
           <!--MAIN MENU-->
             <div class="col-xs-2 column" id="main-menu">
-              <div id="calendarStart" class="calendarSearch">
-                <label>Date de début :</label>
-                <input id="dateDebut" name="dateDebut" type="text" />
-              </div>
               <?php include 'mainMenu.php'; ?>
+              <a href="calendar.php">Calendrier</a>
             </div>
 
             <!--Contenu principal de la page-->
@@ -67,10 +64,10 @@
       <script src="js/jquery.placeholder.js"></script>
       <script src="js/application.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/dispo.js"></script>
 
       <script>
         $(document).ready(function() {
-            $(function(){
             $.datepicker.setDefaults(
                 $.extend($.datepicker.regional['Fr'])
             );
@@ -78,7 +75,12 @@
                     showOtherMonths: true,  
                     dayNamesMin: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],  
                 });  
-          });
+
+         
+              $('#dateFin').datepicker({  
+                    showOtherMonths: true,  
+                    dayNamesMin: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],  
+                });  
         });
       </script>
     </body>
