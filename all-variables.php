@@ -110,6 +110,16 @@
 	************  Récupérer tous les matos en fonction du kit  ***************
 	**************************************************************************/
 
+  function getColorFromProductId($id_product) {
+    $sql = "SELECT Color FROM category " .
+      " INNER JOIN type ON type.ID_Category = category.ID_Category " .
+      " INNER JOIN item ON item.ID_Type = type.ID_Type " .
+      " WHERE item.ID_Item = $id_product";
+
+    $result = mysql_query($sql);
+    return $result;
+  }
+
 	//Récupérer l'administrateur avec l'id
 	function getItemFromKit($id_kit) {
 		$sql = 'SELECT * FROM item

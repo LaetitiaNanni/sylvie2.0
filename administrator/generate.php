@@ -113,6 +113,31 @@
 
       **************************************************************************/-->
 
+      <?php
+        $qrcode_color = getColorFromProductId($id_product);
+        $qrcode_color = $qrcode_color->Color;
+      ?>
+
+      <div id="qrcode-resources">
+        <img class="logo-imac" style="display: none" src="../images/logo-imac.png" alt="" />
+
+        <a href="#" target="_blank" title="Télécharger" id="qrcode-download">Télécharger le QRcode pour impression</a>
+      </div>
+
+      <form id="form-qrcode-gen" method="post" action="index.html">
+        <input type="hidden" name="ID" id="f-qg-id" value="<?php echo $id_product ?>" />
+        <input type="hidden" name="color" id="f-qg-color" value="<?php echo $qrcode_color ?>" />
+
+        <select name="size" id="f-qg-size">
+          <option value="100" selected>Petit</option>
+          <option value="200">Moyen</option>
+          <option value="300">Grand</option>
+          <option value="400">Très grand</option>
+        </select>
+      </form>
+
+      <div id="qrcode-buffer">
+      </div>
 
     </div>
     <div class="clear"></div>

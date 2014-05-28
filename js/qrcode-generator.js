@@ -4,37 +4,6 @@
 UTILITIES
 *******************/
 
-
-/*
- * gives the best color to make the text most readable over a given background color
- * the color parameter is an hexadecimal value
- *
- * return "white" if the color is closer to white
- * return "black" if the color is closed to black
- */
-function color_black_or_white(color) {
-  var rgb = color_hex_to_rgb(color);
-
-  var luminance = 0.2126 * rgb.r + 0.7152 * rgb.g + 0.0722 * rgb.b;
-
-  return (luminance < 128 ? '#ffffff' : '#000000');
-}
-
-
-/*
- * e.g.
- * color_hex_to_rgb("#ff0000") returns {r: 255, g: 0, b: 0}
- */
-function color_hex_to_rgb(hex) {
-  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result ? {
-    r: parseInt(result[1], 16),
-    g: parseInt(result[2], 16),
-    b: parseInt(result[3], 16)
-  } : null;
-}
-
-
 /*
  * takes the id of an object (any kind of string will do)
  * and the size of the qrcode to generate (e.g. '100' -> 100x100px)
@@ -79,14 +48,6 @@ EVENT HANDLERS
 *******************/
 
 
-function on_form_qrcode_gen_color_change() {
-  var $selector = $("#form-qrcode-gen select#f-qg-color");
-  var $selected = $selector.children('option:selected');
-
-  $selector.css('background-color', $selected.val());
-  $selector.css('color', $selected.css('color'));
-}
-
 /*
  * generates a qrcode according to the values in the form
  */
@@ -101,7 +62,7 @@ function on_form_qrcode_gen_submit() {
     return false;
   }
 
-  var color = $(this).find("select#f-qg-color").val();
+  var color = $(this).find("input#f-qg-color").val();
 
   qrcode_generate(id, size, color);
 
@@ -118,35 +79,13 @@ function on_form_qrcode_gen_submit() {
 INITIALIZERS
 *******************/
 
-/*
- * this function is called on document load
- * it gives a background color to each option in the color selector
- * to enhance readability
- */
-function init_form_qrcode_gen_color() {
-  var $selector = $("#form-qrcode-gen select#f-qg-color");
-
-  $selector.children('option').each(function() {
-    $(this).css('background-color', $(this).val());
-
-    var text_color = color_black_or_white($(this).val());
-    $(this).css('color', text_color);
-  });
-
-  $selector.change();
-}
-
 
 function init() {
   /*
    * form handling
    */
   $('#form-qrcode-gen').submit(on_form_qrcode_gen_submit);
-  $('#form-qrcode-gen select#f-qg-color').change(on_form_qrcode_gen_color_change);
-  $('#form-qrcode-gen input').keyup(trigger_form_qrcode_gen_submit);
   $('#form-qrcode-gen select').change(trigger_form_qrcode_gen_submit);
-
-  init_form_qrcode_gen_color();
 }
 
 $(document).ready(init);
