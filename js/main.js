@@ -1,9 +1,19 @@
-$("#main-ul").hide();
+$("#main-menu .menu-sub").hide();
 
-function slideT(clicked){
-	document.getElementById(clicked).children().slideToggle();
-}
 
+$("#main-menu a").click( function (e) {
+    e.preventDefault();
+    
+    // Si le sous-menu était déjà ouvert, on le referme :
+    if ($(this).next(".menu-sub:visible").length != 0) {
+        $(this).next().hide();
+    }
+    // Si le sous-menu est caché, on ferme les autres et on l'affiche :
+    else {
+        $("#main-menu .menu-sub").hide();
+        $(this).next().show();
+    }
+});
 
 // On page load
 $(window).load(columnHeight);

@@ -23,27 +23,27 @@
       <![endif]-->
   </head>
   <body>
-<div id="page">
-  <div id="sticky-footer-wrap">
-    <div class="site-main">
-      <!--MAIN MENU-->
-        <div class="col-xs-2 column" id="main-menu">
-          <?php include 'mainMenu.php'; ?>
-        </div>
+    <div id="page">
+      <div id="sticky-footer-wrap">
+        <div class="site-main">
+          <!--MAIN MENU-->
+            <div class="col-xs-2 column" id="main-menu">
+              <?php include 'mainMenu.php'; ?>
+            </div>
 
-        <!--Contenu principal de la page-->
-        <div class="col-xs-7 column" id="main-content">
-          <!-- mettre des conditions pour gérer les pages -->
-          <?php include 'listing.php'; ?>
-        </div>
+            <!--Contenu principal de la page-->
+            <div class="col-xs-7 column" id="main-content">
+              <!-- mettre des conditions pour gérer les pages -->
+              <?php include 'listing.php'; ?>
+            </div>
 
-        <!--liste du materiel à louer-->
-        <div class="col-xs-3 column" id="rent-status">
-          <?php include 'rentCart.php'; ?>
-        </div>
-        </div>
-  </div>
-</div>
+            <!--liste du materiel à louer-->
+            <div class="col-xs-3 column" id="rent-status">
+              <?php include 'rentCart.php'; ?>
+            </div>
+            </div>
+      </div>
+    </div>
     <footer>
       <p>@ 2014 Ingénieur IMAC - Site réalisé par des élèves</p>
     </footer>
@@ -59,8 +59,6 @@
       <script src="js/flatui-radio.js"></script>
       <script src="js/jquery.tagsinput.js"></script>
       <script src="js/jquery.placeholder.js"></script>
-      <script src="js/jquery.stacktable.js"></script>
-      <script src="http://vjs.zencdn.net/4.3/video.js"></script>
       <script src="js/application.js"></script>
       <script src="js/main.js"></script>
     </body>

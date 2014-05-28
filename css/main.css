@@ -98,6 +98,14 @@ footer {
   border-top:0px;
 }
 
+#main-menu .menu-sub {
+	padding-left : 20px;
+	font-size: 12px;
+}
+
+
+
+
 /* ZONE rent cart */
 #rent-status{
 	background:#F4F4F4;
