@@ -40,6 +40,16 @@ footer {
   	border-bottom :5px solid #e27206;
 }
 
+#footer_student {
+    position: relative;
+    height: 50px;
+    margin-top: -50px; /*relatif au height total du footer*/
+    clear: both;
+    color:#34495e;
+  	background-color:#B6F9EC;
+  	border-bottom :5px solid #1abc9c;
+}
+
 
 
 
@@ -119,6 +129,12 @@ footer {
 	border-color: #1abc9c;
 }
 
+#logo_qr{
+	width: 70%;
+	margin-left: 15%;
+
+}
+
 
 
 
@@ -146,8 +162,3 @@ footer {
 }
 
 
-
-.couleur{
-	background-color: #1abc9c;
-	border-color: #1abc9c;
-}

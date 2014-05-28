@@ -1,3 +1,9 @@
+<div id="logo_qr">
+	<img class="img-rounded img-responsive" alt="logo QR" src="images/logo_qr.jpg"></img>
+	
+</div>
+
+
 <nav>
 <?php
     require_once('conf/top.php');

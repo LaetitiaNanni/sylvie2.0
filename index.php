@@ -44,7 +44,7 @@
             </div>
       </div>
     </div>
-    <footer>
+    <footer id="footer_student">
       <p>@ 2014 Ingénieur IMAC - Site réalisé par des élèves</p>
     </footer>
   </div>
