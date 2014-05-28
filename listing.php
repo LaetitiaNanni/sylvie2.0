@@ -1,5 +1,38 @@
-<p>listing materiel</p>
+<div class="col-md-6 item">
+	<div class="row">
+		<div class="col-xs-4">
+			<img src="http://fakeimg.pl/100/">
+		</div>
+		<div class="col-xs-8">
+			<p>nom</p>
+			<a href="">Calendrier</a>
+			<a href="">Ajouter à la liste</a>
 
+		</div>
+	</div>
+</div>
+<div class="col-md-6 item">
+	<div class="row">
+		<div class="col-xs-4">
+			<img src="http://fakeimg.pl/100/">
+		</div>
+		<div class="col-xs-8">
+			<p>nom</p>
+			<a href="">Calendrier</a>
+		</div>
+	</div>
+</div>
+<div class="col-md-6 item">
+	<div class="row">
+		<div class="col-xs-4">
+			<img src="http://fakeimg.pl/100/">
+		</div>
+		<div class="col-xs-8">
+			<p>nom</p>
+			<a href="">Calendrier</a>
+		</div>
+	</div>
+</div>
 <?php
 
 	$allKits = getAllKits();
@@ -19,3 +52,4 @@
 	}
 
 ?>
+
