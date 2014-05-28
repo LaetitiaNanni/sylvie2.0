@@ -88,12 +88,15 @@ footer {
   border-bottom:1px solid #eee;
 }
 
-#main-menu nav a:hover,
+
 #main-menu nav a.actif {
-  background-color:#3498DB;
+  background-color:#1abc9c;
   color:#fff;
 }
-
+#main-menu nav a:hover{
+	background-color:#48C9B0;
+	color:#fff;
+}
 #main-menu nav a+a {
   border-top:0px;
 }
@@ -102,6 +105,18 @@ footer {
 	padding-left : 20px;
 	font-size: 12px;
 }
+
+.btn {
+	background-color: #1abc9c;
+	border-color: #1abc9c;
+}
+
+.btn-primary{
+	background-color: #1abc9c;
+	border-color: #1abc9c;
+}
+
+
 
 
 
@@ -125,4 +140,11 @@ footer {
 }
 #rent-status .cart_actions {
 	float: right;
+}
+
+
+
+.couleur{
+	background-color: #1abc9c;
+	border-color: #1abc9c;
 }
